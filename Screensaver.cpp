@@ -6,16 +6,18 @@
 using namespace std;
 
 class Screensaver {
-vector<Figure> figures;
 
-void addFigure(Figure f){
-    figures.push_back(f);
-}
+    public:
+    vector<Figure> figures;
+    void addFigure(Figure f){
+        figures.push_back(f);
+    }
 
-void drawFigures(){
-    for (vector<Figure>::iterator it = figures.begin(); it != figures.end(); it++)
-        it->draw();
-}
+    void drawFigures(){
+        for (vector<Figure>::iterator it = figures.begin(); it != figures.end(); it++)
+            it->draw();
+    }
+
 
 
 };
