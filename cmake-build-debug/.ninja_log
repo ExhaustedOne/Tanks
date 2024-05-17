@@ -1,7 +1,0 @@
-# ninja log v5
-4	397	7370671250996941	CMakeFiles/Tanks.dir/main.cpp.obj	17233e73b907e2dc
-9	1600	7370670460499144	CMakeFiles/Tanks.dir/AllegroBase.cpp.obj	e3b98cd9c7087c86
-40	338	7370658796912072	CMakeFiles/Tanks.dir/Square.cpp.obj	efbaaf6b5ab4da1f
-398	483	7370671251825687	Tanks.exe	1115efc127595f6a
-35	337	7370658796922069	CMakeFiles/Tanks.dir/Player.cpp.obj	6a76efdcaad07051
-45	338	7370658796912072	CMakeFiles/Tanks.dir/Figure.cpp.obj	400143f70d9fe746

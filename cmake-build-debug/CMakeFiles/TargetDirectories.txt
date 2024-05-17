@@ -1,3 +1,0 @@
-C:/Users/magma/CLionProjects/Tanks/cmake-build-debug/CMakeFiles/Tanks.dir
-C:/Users/magma/CLionProjects/Tanks/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/magma/CLionProjects/Tanks/cmake-build-debug/CMakeFiles/rebuild_cache.dir
