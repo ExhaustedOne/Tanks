@@ -1,8 +1,8 @@
 #include <iostream>
-#include "AllegroBase.cpp"
+#include "AllegroBase.hpp"
+using namespace std;
 
 int main() {
-Allegrobase al = new AllegroBase();
 
     return 0;
 }

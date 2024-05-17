@@ -8,10 +8,10 @@
 using namespace std;
 
 AllegroBase::AllegroBase() :
-    alDisplay_( 0 ),
-    alEventQueue_( 0 ),
-    alTimer_( 0 ),
-    exit_( false )
+        alDisplay_( 0 ),
+        alEventQueue_( 0 ),
+        alTimer_( 0 ),
+        exit_( false )
 {
     memset( pressedKeys_, 0, sizeof( pressedKeys_ ) );
 }
@@ -139,7 +139,7 @@ void AllegroBase::Run()
         {
             break;
         }
-   }
+    }
 }
 
 void AllegroBase::Exit()

@@ -84,6 +84,20 @@ build CMakeFiles/Tanks.dir/Player.cpp.obj: CXX_COMPILER__Tanks_unscanned_Debug C
   OBJECT_DIR = CMakeFiles\Tanks.dir
   OBJECT_FILE_DIR = CMakeFiles\Tanks.dir
 
+build CMakeFiles/Tanks.dir/Screensaver.cpp.obj: CXX_COMPILER__Tanks_unscanned_Debug C$:/Users/magma/CLionProjects/Tanks/Screensaver.cpp || cmake_object_order_depends_target_Tanks
+  DEP_FILE = CMakeFiles\Tanks.dir\Screensaver.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Program -IC:/Users/magma/CLionProjects/Tanks/Files -IC:/Users/magma/CLionProjects/Tanks/( -IC:/Users/magma/CLionProjects/Tanks/x86 -IC:/Users/magma/CLionProjects/Tanks/) -I/MinGW/include
+  OBJECT_DIR = CMakeFiles\Tanks.dir
+  OBJECT_FILE_DIR = CMakeFiles\Tanks.dir
+
+build CMakeFiles/Tanks.dir/AllegroApp.cpp.obj: CXX_COMPILER__Tanks_unscanned_Debug C$:/Users/magma/CLionProjects/Tanks/AllegroApp.cpp || cmake_object_order_depends_target_Tanks
+  DEP_FILE = CMakeFiles\Tanks.dir\AllegroApp.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Program -IC:/Users/magma/CLionProjects/Tanks/Files -IC:/Users/magma/CLionProjects/Tanks/( -IC:/Users/magma/CLionProjects/Tanks/x86 -IC:/Users/magma/CLionProjects/Tanks/) -I/MinGW/include
+  OBJECT_DIR = CMakeFiles\Tanks.dir
+  OBJECT_FILE_DIR = CMakeFiles\Tanks.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Tanks
@@ -92,7 +106,7 @@ build CMakeFiles/Tanks.dir/Player.cpp.obj: CXX_COMPILER__Tanks_unscanned_Debug C
 #############################################
 # Link the executable Tanks.exe
 
-build Tanks.exe: CXX_EXECUTABLE_LINKER__Tanks_Debug CMakeFiles/Tanks.dir/main.cpp.obj CMakeFiles/Tanks.dir/AllegroBase.cpp.obj CMakeFiles/Tanks.dir/Figure.cpp.obj CMakeFiles/Tanks.dir/Square.cpp.obj CMakeFiles/Tanks.dir/Player.cpp.obj
+build Tanks.exe: CXX_EXECUTABLE_LINKER__Tanks_Debug CMakeFiles/Tanks.dir/main.cpp.obj CMakeFiles/Tanks.dir/AllegroBase.cpp.obj CMakeFiles/Tanks.dir/Figure.cpp.obj CMakeFiles/Tanks.dir/Square.cpp.obj CMakeFiles/Tanks.dir/Player.cpp.obj CMakeFiles/Tanks.dir/Screensaver.cpp.obj CMakeFiles/Tanks.dir/AllegroApp.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lallegro  -lallegro_primitives  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Tanks.dir

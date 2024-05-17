@@ -16,10 +16,11 @@ add_executable(Tanks
         AllegroBase.cpp
         ../Tanks/AllegroBase.cpp
         AllegroBase.hpp
-        Player.h
         Figure.cpp
         Square.cpp
         Player.cpp
+        Screensaver.cpp
+        AllegroApp.cpp
 
 
 )

@@ -4,5 +4,5 @@ protected:
     double y = 0;
 
 public:
-    virtual void Draw() = 0;
+    virtual void draw() {};
 };
