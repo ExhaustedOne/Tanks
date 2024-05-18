@@ -1,13 +1,15 @@
 #include "AllegroBase.hpp"
 #include "Screensaver.cpp"
-#include "FigureFactory.cpp"
 
-class AllegroApp: public AllegroBase {
+class AllegroApp: AllegroBase {
 private:
     Screensaver ss;
 
-    AllegroApp() {
-        ss.addFigure(FigureFactory::square(100, 100));
-        Run();
+    void Draw() override{
+        ss.Draw();
+    }
+
+    void Fps() override{
+        if (IsPressed(ALLEGRO_KEY_W)) {}
     }
 };

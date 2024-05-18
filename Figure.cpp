@@ -5,4 +5,5 @@ protected:
 
 public:
     virtual void draw() {};
+    virtual void move() {};
 };

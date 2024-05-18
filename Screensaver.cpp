@@ -9,15 +9,19 @@ class Screensaver {
 
     public:
     vector<Figure> figures;
-    void addFigure(Figure f){
+
+    void Add(Figure f){
         figures.push_back(f);
     }
 
-    void drawFigures(){
-        for (vector<Figure>::iterator it = figures.begin(); it != figures.end(); it++)
+    void Draw(){
+        for (auto it = figures.begin(); it != figures.end(); it++)
             it->draw();
+    };
+    void Next(){
+        for (auto it = figures.begin(); it != figures.end(); it++)
+            it->move();
     }
-
 
 
 };

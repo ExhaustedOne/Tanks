@@ -1,7 +1,7 @@
 #include "Figure.cpp"
 #include "AllegroBase.hpp"
 
-class Square : public Figure{
+class Square : protected Figure{
 private:
     const double side = 10;
 
