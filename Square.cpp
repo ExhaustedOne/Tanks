@@ -1,12 +1,19 @@
+#pragma once
+
 #include "Figure.cpp"
 #include "AllegroBase.hpp"
 
-class Square : protected Figure{
-private:
-    const double side = 10;
+class Square : public Figure{
+protected:
+    const double side = 50;
 
 public:
-    void draw() override{
-        al_draw_line(x-side/2, y-side/2, x+side/2, y+side/2, al_map_rgb(255, 255, 255), 1);
+    Square(int _x, int _y){
+        x = _x;
+        y = _y;
+    }
+
+    void draw() {
+        al_draw_filled_rectangle(x-side/2, y-side/2, x+side/2, y+side/2, al_map_rgb(100, 100, 100));
     }
 };
