@@ -6,27 +6,26 @@ class AllegroApp: public AllegroBase {
 public:
 
     AllegroApp() : p(100, 100) {
-//        ss.Add(p);
+        ss.Add(&p);
     }
-
-private:
     Screensaver ss;
     Player p;
 
+private:
     void Draw() override{
         clear();
         ss.Draw();
-        p.draw();
     }
 
     void Fps() override{
+        if(IsPressed(ALLEGRO_KEY_SPACE)) {p.shoot();}
+
         if (IsPressed(ALLEGRO_KEY_W)) {p.dy = -1, p.dx = 0;}
         else if (IsPressed(ALLEGRO_KEY_D)) {p.dy = 0, p.dx = 1;}
         else if (IsPressed(ALLEGRO_KEY_S)) {p.dy = 1, p.dx = 0;}
         else if (IsPressed(ALLEGRO_KEY_A)) {p.dy = 0, p.dx = -1;}
         else {p.dy = 0, p.dx = 0;}
 
-        p.move();
         ss.Next();
     }
     static void clear(){

@@ -1,18 +1,18 @@
 #include "Square.cpp"
-#include <string>
+#include "ScreenSaver.cpp"
+#include "Bullet.cpp"
+#pragma once
 
 using namespace std;
 
 class Player : public Square{
 public:
-    Player(int x, int y) : Square(x, y) {
-
+    Player(int _x, int _y) : Square(_x, _y)
+    {
     }
 
-    const int speed = 1;
-    int dx = 0;
-    int dy = 0;
     int lastor = 0; // 0-W, 1-D, 2-S, 3-A
+    int speed = 1;
 
     void move() override{
         x += dx * speed;
@@ -56,7 +56,11 @@ public:
             }
         }
     }
+    void shoot(){
 
+    }
+
+private:
     void rotateUp(){
         al_draw_filled_rectangle(x - side / 2, y - side / 2, x + side / 2, y + side / 2,al_map_rgb(100, 100, 100)); //body
         al_draw_filled_rectangle(x - 3, y, x + 3, y - 40, al_map_rgb(0, 0, 255)); //barrel
@@ -85,5 +89,4 @@ public:
         al_draw_filled_rectangle(x - side / 2, y - side / 2, x + side / 2, y - side / 2 + 12,al_map_rgb(80, 80, 80)); //upper tracks
         al_draw_filled_rectangle(x - side / 2, y + side / 2, x + side / 2, y + side / 2 - 12,al_map_rgb(80, 80, 80)); //lower tracks
     }
-
 };

@@ -1,8 +1,7 @@
-#include "AllegroBase.hpp"
 #include "Figure.cpp"
-#include "FigureFactory.cpp"
 #include <vector>
-#include <iterator>
+#pragma once
+
 
 using namespace std;
 
@@ -13,20 +12,21 @@ class Screensaver {
         Layout();
     }
 
-    vector<Square> figures;
+    vector<Figure *> figures;
 
-    void Add(Square f){
+    void Add(Figure *f){
         figures.push_back(f);
     }
 
     void Draw(){
         for (auto it = figures.begin(); it != figures.end(); it++)
-            it->draw();
+        (*it)->draw();
     };
     void Next(){
         for (auto it = figures.begin(); it != figures.end(); it++)
-            it->move();
+        (*it)->move();
     }
+
     void Layout(){
 
     }

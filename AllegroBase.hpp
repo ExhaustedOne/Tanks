@@ -6,8 +6,8 @@
 #include <allegro5/allegro_primitives.h>
 
 const int FPS = 90;
-const int SCREEN_W = 1920;
-const int SCREEN_H = 1080;
+const int SCREEN_W = 960;
+const int SCREEN_H = 540;
 
 class AllegroBase
 {

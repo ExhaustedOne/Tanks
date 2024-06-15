@@ -1,18 +1,21 @@
 #pragma once
 
 class Figure {
-protected:
-    int x = 0;
-    int y = 0;
+
 
 public:
     Figure(int _x, int _y){
         x = _x;
         y = _y;
     }
+    int dx = 0;
+    int dy = 0;
+    int speed = 0;
+    int x;
+    int y;
 
-    Figure() {}
+    Figure() = default;
 
     virtual void draw() = 0;
-    virtual void move() {};
+    virtual void move() = 0;
 };
